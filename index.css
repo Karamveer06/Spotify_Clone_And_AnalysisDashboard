@@ -1,0 +1,354 @@
+/* default styling */
+        
+*{          
+    margin: 0;                               
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar{
+    width: 300px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    bottom:0;
+    position: fixed;
+    padding: 10px;
+}
+.sidebar-nav{
+    background-color: #141414;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+.logo{
+    width: 120px;
+}
+.logo img{
+    width: 100%;
+}
+.sidebar-nav ul{
+    list-style: none;
+  
+}
+.sidebar-nav ul li{
+    padding: 10px 0px 10px 13px;
+
+}
+/* font weight is for bold */
+.sidebar-nav ul li a{
+    text-decoration: none;
+    color: rgb(197, 193, 193);
+    font-size: 16px;
+    font-weight: 600;
+}
+.sidebar-nav ul li a:hover{
+    color: aliceblue;
+}
+
+.sidebar-nav ul li a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.library::after{
+    content: "+";
+    float: right;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+}
+.create-playlist{
+    color: white;
+    background-color: rgb(47, 46, 46);
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.sidebar-scroll{
+    height: 100px;
+    overflow-y: auto;
+}
+.sidebar-scroll::-webkit-scrollbar{
+    background:transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    background:transparent;
+    width: 10px;
+}
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    background: rgb(88, 88, 88);
+    width: 10px;
+}
+.create-playlist h4{
+    font-size: 15px;
+}
+.create-playlist p{
+    font-size: 12px;
+    margin: 12px 0;
+    font-weight: 400;
+}
+.create-playlist button{
+   border: 0;
+   padding:8px 15px;
+   outline: 0;
+   border-radius: 20px;
+   font-weight: 600;
+   margin-top: 7px;
+}
+.create-playlist button:hover{
+    padding: 9px 16px
+}
+.privacy ul li a{
+    text-decoration: none;    
+    color: rgb(162, 158, 158);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px 6px
+}
+.privacy ul li a:hover{
+    text-decoration: underline;  
+    color: aliceblue;  
+    
+}
+.privacy ul{
+    list-style: none;
+   margin-top: 10px;
+}
+.privacy ul li{
+    padding :0px 10px;
+    padding-bottom: 8px;
+}
+.eng-btn{
+    padding: 20px 30px;
+}
+.eng-btn button{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    border: 1px solid rgb(130, 127, 127);
+    margin:10pv 0px;
+}
+.eng-btn button:hover{
+    padding: 11px 31px;
+    border:1px solid white;
+}
+.main-setion{
+    margin-left: 300px;
+    background: rgb(27, 26, 26);
+    height: 100vh;
+    border-radius: 10px;
+    overflow-y: auto;
+    margin-bottom: 80px;
+}
+.main-setion::-webkit-scrollbar{
+    background:transparent;
+}
+.main-setion::-webkit-scrollbar-thumb{
+    background:transparent;
+    width: 10px;
+}
+.main-setion:hover::-webkit-scrollbar-thumb{
+    background: rgb(88, 88, 88);
+    width: 10px;
+}
+
+.main-setion .top-nav{
+    padding: 15px 31px;
+    background: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+}
+.main-setion .top-nav .prev-btn button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+.main-setion .top-nav .prev-btn button i{
+    color: rgb(162, 158, 158); 
+    font-size: 20px;
+    margin-right: 20px;
+}
+.top-nav .login-btn button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+.top-nav .login-btn .sign-up{
+    color: rgb(162, 158, 158);
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 18px;
+}
+.top-nav .login-btn .sign-up:hover{
+    color: white;
+    padding: 1px 1px;
+}
+.top-nav .login-btn .login{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    padding: 10px 22px;
+    border-radius:20px;
+}
+.top-nav .login-btn .login:hover{
+    background-color: rgb(200, 195, 195);
+}
+.spotify-playlist{
+    padding: 20px 40px;
+}
+.spotify-playlist h2{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.spotify-playlist .card{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.spotify-playlist .card .item{
+    width:200px;
+    min-width: 140px;
+    background-color: rgb(27, 26, 26);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+}
+.spotify-playlist .card .item:hover{
+    background-color: #343030;
+}
+
+.spotify-playlist .card .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    height: 130px;
+}
+.spotify-playlist .card .item h4{
+    color: white;
+}
+.spotify-playlist .card .item p{
+    color: rgb(162, 158, 158);
+    font-size: 12px;
+    margin-top: 10px;
+}
+.spotify-playlist .card .item p:hover{
+    text-decoration: underline;
+}
+.spotify-playlist .card .item .play-button{
+    position: relative;
+}
+.spotify-playlist .card .item .play-button i{
+    position:absolute ;
+    background-color: #1db954;
+    border-radius:50%;
+    padding: 10px;
+    top:-40px;
+    right: 8px;
+    opacity: 0;
+    transform: 0.9s ease all;
+}
+.spotify-playlist .card .item:hover .play-button i{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.footer-section{
+    padding:20px 40px;
+
+}
+.footer-section .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.footer-section .footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footer-section .footer .footer-links .footer-column{
+    margin: 0px 12px;
+}
+.footer-section .footer .footer-links div{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.footer-section .footer .footer-links ul li{
+    list-style: none;
+    margin: 6px 0px;
+}
+.footer-section .footer .footer-links ul li a{
+    text-decoration: none;
+    color:rgb(162, 158, 158); 
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer-section .footer .footer-links ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer .social-links i{
+    color: white;
+    background-color:rgb(47, 46, 46) ;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 0px 1px;
+    cursor:pointer;
+}
+.footer .social-links i:hover{
+    background: rgb(102, 101, 101);
+}
+hr{
+    margin: 40px 40px;
+    border: 0;
+    outline: 0;
+    border: 1px solid rgb(102, 101, 101);
+}
+.copyright{
+    padding: 0px 40px;
+    color: rgb(162, 158, 158);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.preview{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ae2896,#509bf5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 40px;
+}
+.previw h4{
+    font-size:13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+.preview p{
+    font-size:16px;
+    font-weight: 400;
+    color:white ;
+}
+.preview button{
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
